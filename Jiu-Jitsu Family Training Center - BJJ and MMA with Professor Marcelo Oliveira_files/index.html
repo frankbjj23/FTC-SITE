@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Jiu-Jitsu Family Training Center — BJJ & MMA with Professor Marcelo
+      Oliveira
+    </title>
+    <meta
+      name="description"
+      content="Brazilian Jiu-Jitsu & Mixed Martial Arts for kids, teens, and adults in Edgewater & Secaucus, NJ. Beginner-friendly classes, clean facility, supportive team culture."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Jiu-Jitsu Family Training Center — Train Smart. Join the Family."
+    />
+    <meta
+      property="og:description"
+      content="Authentic BJJ and MMA instruction in North Jersey. Kids • Teens • Adults • No-Gi • MMA."
+    />
+    <meta property="og:image" content="banner-1.jpg" />
+    <link rel="icon" href="draculino-logo.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #0b0c10;
+        --surface: #121318;
+        --text: #eaf2fb;
+        --muted: #a8b8c6;
+        --brand: #22c55e;
+        --accent: #38bdf8;
+        --radius: 18px;
+        --shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        color: var(--text);
+        font: 16px/1.6 Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+          sans-serif;
+        background: radial-gradient(
+            1200px 600px at 10% -10%,
+            rgba(56, 189, 248, 0.12),
+            transparent 60%
+          ),
+          radial-gradient(
+            1200px 600px at 90% -20%,
+            rgba(34, 197, 94, 0.12),
+            transparent 60%
+          ),
+          var(--bg);
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: blur(8px) saturate(1.2);
+        background: rgba(0, 0, 0, 0.55);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 12px 20px;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+      }
+      .brand {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .brand img {
+        width: 44px;
+        height: 44px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      .brand-title {
+        font: 800 18px/1 Playfair Display, serif;
+      }
+      .navlinks {
+        margin-left: auto;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .navlinks a {
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+      }
+      .navlinks a:hover {
+        border-color: rgba(255, 255, 255, 0.18);
+      }
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        border: 1px solid rgba(34, 197, 94, 0.45);
+        background: linear-gradient(
+          180deg,
+          rgba(34, 197, 94, 0.35),
+          rgba(34, 197, 94, 0.1)
+        );
+        color: var(--text);
+        font-weight: 800;
+      }
+      .menu-btn {
+        display: none;
+        margin-left: auto;
+        font-size: 24px;
+        cursor: pointer;
+        background: none;
+        border: 0;
+        color: var(--text);
+      }
+
+      .section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 48px 20px;
+      }
+      .section-title {
+        font: 700 34px/1.2 Playfair Display, serif;
+        margin: 0 0 10px;
+      }
+      .section-sub {
+        color: var(--muted);
+        margin: 0 0 18px;
+      }
+
+      .hero .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 56px 20px 26px;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 26px;
+      }
+      h1 {
+        font-family: Playfair Display, serif;
+        font-size: clamp(30px, 5vw, 56px);
+        line-height: 1.05;
+        margin: 0 0 10px;
+      }
+      .tag {
+        display: inline-flex;
+        padding: 8px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 999px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.02)
+        );
+        color: var(--muted);
+      }
+      .poster {
+        aspect-ratio: 16/9;
+        border-radius: var(--radius);
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: var(--shadow);
+        background: #000 center/cover no-repeat;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 18px;
+      }
+      .card {
+        grid-column: span 4;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.02)
+        );
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .card .img {
+        height: 200px;
+        background: #000 center/cover no-repeat;
+      }
+      .card .body {
+        padding: 16px 16px 18px;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        color: #06131f;
+        background: linear-gradient(90deg, #34d399, #a7f3d0);
+        font-weight: 800;
+      }
+
+      .locations .card {
+        grid-column: span 6;
+      }
+      .locations .map {
+        width: 100%;
+        height: 240px;
+        border: 0;
+        border-radius: 12px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+      }
+      .gallery a {
+        display: block;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      footer {
+        margin-top: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(0, 0, 0, 0.35);
+      }
+      .foot {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 28px 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.2fr;
+        gap: 18px;
+      }
+      .socials {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .socials img {
+        width: 28px;
+        height: 28px;
+        display: block;
+        border-radius: 6px;
+      }
+      .copyright {
+        padding: 14px 20px;
+        text-align: center;
+        color: var(--muted);
+      }
+
+      @media (max-width: 960px) {
+        .hero .wrap {
+          grid-template-columns: 1fr;
+        }
+        .card {
+          grid-column: span 6;
+        }
+        .foot {
+          grid-template-columns: 1fr 1fr;
+        }
+        .navlinks {
+          display: none;
+        }
+        .menu-btn {
+          display: block;
+        }
+        .nav.open .navlinks {
+          display: flex;
+          width: 100%;
+        }
+      }
+      @media (max-width: 640px) {
+        .card {
+          grid-column: span 12;
+        }
+        .gallery {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="nav" id="nav">
+        <a class="brand" href="#top">
+          <img src="draculino-logo.jpg" alt="Vinicius Draculino crest" />
+          <span class="brand-title">Jiu-Jitsu Family Training Center</span>
+        </a>
+        <div class="navlinks">
+          <a href="#welcome">Home</a>
+          <a href="#programs">Programs</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#coaches">Professor</a>
+          <a href="#locations">Locations</a>
+          <a href="#contact" class="cta">Book Free Trial</a>
+        </div>
+        <button
+          class="menu-btn"
+          aria-label="Open menu"
+          onclick="document.getElementById('nav').classList.toggle('open')"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="welcome">
+      <div class="wrap">
+        <div>
+          <span class="tag"
+            >Brazilian Jiu-Jitsu • Kids • Teens • Adults • No-Gi • MMA</span
+          >
+          <h1>Train Smart. Build Confidence. Join the Family.</h1>
+          <p class="section-sub">
+            Authentic instruction led by Professor Marcelo Oliveira.
+            Beginner-friendly fundamentals, clean facility, and a supportive
+            community.
+          </p>
+          <div
+            style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px"
+          >
+            <a class="cta" href="#contact">Try a Free Class</a>
+            <a
+              class="cta"
+              style="
+                border-color: rgba(56, 189, 248, 0.45);
+                background: linear-gradient(
+                  180deg,
+                  rgba(56, 189, 248, 0.35),
+                  rgba(56, 189, 248, 0.1)
+                );
+              "
+              href="#schedule"
+              >See Schedule</a
+            >
+          </div>
+        </div>
+        <div
+          class="poster"
+          id="heroPoster"
+          role="img"
+          aria-label="Training on the mats"
+          style="background-image: url('banner-1.jpg')"
+        ></div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="section" aria-label="Programs">
+      <h2 class="section-title">Programs</h2>
+      <p class="section-sub">
+        Structured classes, age-appropriate instruction, and progressive
+        drilling across two North Jersey locations.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <div class="img" style="background-image: url('kids2.jpg')"></div>
+          <div class="body">
+            <h3>Kids & Teens</h3>
+            <span class="pill">Ages 3–17</span>
+            <p class="section-sub">
+              Confidence, respect, and anti-bullying skills through fundamentals
+              and games.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div
+            class="img"
+            style="background-image: url('adults-class.jpg')"
+          ></div>
+          <div class="body">
+            <h3>Adult Fundamentals</h3>
+            <p class="section-sub">
+              Core positions and safe intro to live training. Start at any
+              fitness level.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="img" style="background-image: url('banner-6.jpg')"></div>
+          <div class="body">
+            <h3>No-Gi & MMA</h3>
+            <p class="section-sub">
+              Faster-paced grappling with clinch and wrestling entries.
+              Protective gear for MMA.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROFESSOR -->
+    <section
+      id="coaches"
+      class="section"
+      aria-label="Professor Marcelo Oliveira"
+    >
+      <h2 class="section-title">Professor Marcelo Oliveira</h2>
+      <p class="section-sub">
+        5th-degree black belt and former MMA fighter with 25+ years teaching
+        authentic BJJ to adults and children. Lineage under Vinicius “Draculino”
+        Magalhães.
+      </p>
+
+      <div class="grid">
+        <article class="card" style="grid-column: span 7">
+          <div
+            class="img"
+            style="background-image: url('banner-5.jpg'); height: 240px"
+          ></div>
+          <div class="body">
+            <p>
+              Beginning martial arts at age six, Professor Marcelo studied
+              multiple disciplines before embracing Brazilian Jiu-Jitsu in Belo
+              Horizonte. He brings detail-rich instruction, competition
+              experience, and a family-first academy culture to North Jersey.
+            </p>
+            <p class="section-sub">
+              Students who demonstrate readiness are welcome to join the
+              competition team and attend our annual
+              <a
+                href="https://www.jiujitsunewjersey.com/bjj-camp-in-brazil"
+                target="_blank"
+                rel="noopener"
+                >BJJ Camp in Brazil</a
+              >.
+            </p>
+          </div>
+        </article>
+
+        <article class="card" style="grid-column: span 5">
+          <div
+            class="body"
+            style="display: flex; align-items: center; gap: 14px"
+          >
+            <img
+              src="team-oliveira-logo.jpg"
+              alt="Team Oliveira logo"
+              style="
+                width: 84px;
+                height: 84px;
+                border-radius: 12px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+              "
+            />
+            <div>
+              <h3 style="margin: 0 0 6px">Affiliation & Lineage</h3>
+              <p class="section-sub" style="margin: 0">
+                Proud lineage under Vinicius Draculino. Annual training camps in
+                Belo Horizonte & Morro de São Paulo.
+              </p>
+            </div>
+          </div>
+          <div
+            class="img"
+            style="background-image: url('banner-camp.jpg'); height: 210px"
+          ></div>
+        </article>
+      </div>
+
+      <div class="grid" style="margin-top: 10px">
+        <article class="card" style="grid-column: span 3">
+          <div
+            class="img"
+            style="background-image: url('marcelo-with-draculino-1.jpg')"
+          ></div>
+          <div class="body"><small>Marcelo with Draculino</small></div>
+        </article>
+        <article class="card" style="grid-column: span 3">
+          <div
+            class="img"
+            style="background-image: url('marcelo-with-draculino-2.jpg')"
+          ></div>
+          <div class="body"><small>Marcelo with Draculino</small></div>
+        </article>
+        <article class="card" style="grid-column: span 3">
+          <div
+            class="img"
+            style="background-image: url('john-jaden-marcelo.jpg')"
+          ></div>
+          <div class="body">
+            <small>John Toribio with son Jaden & Marcelo</small>
+          </div>
+        </article>
+        <article class="card" style="grid-column: span 3">
+          <div
+            class="img"
+            style="background-image: url('john-marcelo-brownbelt.jpg')"
+          ></div>
+          <div class="body"><small>FTC Brown Belt Graduation</small></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section" aria-label="Schedule">
+      <h2 class="section-title">Weekly Schedule</h2>
+      <p class="section-sub">
+        Live schedule updates are available for each location.
+      </p>
+
+      <div class="grid">
+        <div class="card" style="grid-column: span 6">
+          <div
+            class="img"
+            style="background-image: url('storefront-night.jpg'); height: 160px"
+          ></div>
+          <div class="body">
+            <h3>Edgewater, NJ</h3>
+            <p class="section-sub">
+              <a
+                href="https://maps.app.goo.gl/hLUeG3N1Et9iLbe77"
+                target="_blank"
+                rel="noopener"
+                >360 Old River Road, Edgewater, NJ 07020</a
+              >
+              • <a href="tel:+12012334220">(201) 233-4220</a>
+            </p>
+            <div
+              style="
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                border-radius: var(--radius);
+                overflow: hidden;
+              "
+            >
+              <iframe
+                title="Edgewater Class Schedule"
+                style="width: 100%; height: 380px; border: 0"
+                loading="lazy"
+                src="https://docs.google.com/document/d/e/2PACX-1vRWV3sksaC8LoG5EUlmkK9R4sWNUyIELrvj7-VJWW9-P53d48pelUSFDIy8jODmE4BQxPqj2MJKgAw2/pub?embedded=true"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="grid-column: span 6">
+          <div
+            class="img"
+            style="
+              background-image: url('storefront-secaucus.jpg');
+              height: 160px;
+            "
+          ></div>
+          <div class="body">
+            <h3>Secaucus, NJ</h3>
+            <p class="section-sub">
+              <a
+                href="https://maps.app.goo.gl/e4JuTcXWsqQmrnhh6"
+                target="_blank"
+                rel="noopener"
+                >700 Plaza Drive, Secaucus, NJ 07094</a
+              >
+              • <a href="tel:+16463193759">(646) 319-3759</a>
+            </p>
+            <div
+              style="
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                border-radius: var(--radius);
+                overflow: hidden;
+              "
+            >
+              <iframe
+                title="Secaucus Class Schedule"
+                style="width: 100%; height: 380px; border: 0"
+                loading="lazy"
+                src="https://docs.google.com/document/d/e/2PACX-1vSX-YEeCg-fcJtZRxqxTGLQ847-SYLGOvZ4_ciZL1-1yeQb59nCenfTj1Cft3CPaz-Cjwh1kIXGdDUf/pub?embedded=true"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY / COMMUNITY -->
+    <section class="section" aria-label="On the Mats">
+      <h2 class="section-title">On the Mats</h2>
+      <p class="section-sub">
+        Scenes from training, family events, and competition.
+      </p>
+      <div class="gallery">
+        <!-- banners -->
+        <a href="#"><img loading="lazy" src="banner-1.jpg" alt="Mat talk" /></a>
+        <a href="#"
+          ><img loading="lazy" src="banner-2.jpg" alt="Gi fundamentals"
+        /></a>
+        <a href="#"
+          ><img loading="lazy" src="banner-3.jpg" alt="Kids MMA class"
+        /></a>
+        <a href="#"
+          ><img loading="lazy" src="banner-4.jpg" alt="Team group photo"
+        /></a>
+        <a href="#"
+          ><img loading="lazy" src="banner-5.jpg" alt="Trophies celebration"
+        /></a>
+        <a href="#"
+          ><img loading="lazy" src="banner-6.jpg" alt="MMA cage action"
+        /></a>
+        <!-- new / other photos -->
+        <a href="#"
+          ><img loading="lazy" src="tournament.jpg" alt="Tournament action 1"
+        /></a>
+        <a href="#"
+          ><img loading="lazy" src="tournament2.jpg" alt="Tournament action 2"
+        /></a>
+        <a href="#"
+          ><img loading="lazy" src="tournament3.jpg" alt="Tournament action 3"
+        /></a>
+        <a href="#"
+          ><img loading="lazy" src="teens.jpg" alt="Teens drilling"
+        /></a>
+        <a href="#"
+          ><img loading="lazy" src="locations.jpg" alt="Locations banner"
+        /></a>
+        <a href="#"
+          ><img
+            loading="lazy"
+            src="locations-edgewater.jpg"
+            alt="Edgewater location"
+        /></a>
+        <a href="#"
+          ><img
+            loading="lazy"
+            src="locations-secaucus.jpg"
+            alt="Secaucus location"
+        /></a>
+        <a href="#"
+          ><img
+            loading="lazy"
+            src="professor.jpg"
+            alt="Professor Marcelo Oliveira"
+        /></a>
+        <a href="#"
+          ><img
+            loading="lazy"
+            src="professor-john.jpg"
+            alt="Professor John Toribio"
+        /></a>
+      </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section id="locations" class="section locations" aria-label="Locations">
+      <h2 class="section-title">Visit Us</h2>
+      <p class="section-sub">
+        Two North Jersey academies. Stop by or call during class hours.
+      </p>
+
+      <div class="grid">
+        <article class="card" style="grid-column: span 6">
+          <div
+            class="img"
+            style="background-image: url('storefront-night.jpg')"
+          ></div>
+          <div class="body">
+            <h3>Edgewater, NJ</h3>
+            <p>
+              360 Old River Road, Edgewater, NJ 07020<br /><a
+                href="tel:+12012334220"
+                >(201) 233-4220</a
+              >
+            </p>
+            <div class="socials">
+              <a
+                class="cta"
+                style="padding: 8px 12px"
+                href="https://maps.app.goo.gl/hLUeG3N1Et9iLbe77"
+                target="_blank"
+                rel="noopener"
+                >Open in Google Maps</a
+              >
+              <a href="sms:+12012334220" title="Text Edgewater"
+                ><img src="text-button.png" alt="SMS"
+              /></a>
+              <a
+                href="https://wa.me/12012334220"
+                target="_blank"
+                rel="noopener"
+                title="WhatsApp Edgewater"
+                ><img src="whatsapp-button.png" alt="WhatsApp"
+              /></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" style="grid-column: span 6">
+          <div
+            class="img"
+            style="background-image: url('storefront-secaucus.jpg')"
+          ></div>
+          <div class="body">
+            <h3>Secaucus, NJ</h3>
+            <p>
+              700 Plaza Drive, Secaucus, NJ 07094<br /><a
+                href="tel:+16463193759"
+                >(646) 319-3759</a
+              >
+            </p>
+            <div class="socials">
+              <a
+                class="cta"
+                style="padding: 8px 12px"
+                href="https://maps.app.goo.gl/e4JuTcXWsqQmrnhh6"
+                target="_blank"
+                rel="noopener"
+                >Open in Google Maps</a
+              >
+              <a href="sms:+16463193759" title="Text Secaucus"
+                ><img src="text-button.png" alt="SMS"
+              /></a>
+              <a
+                href="https://wa.me/16463193759"
+                target="_blank"
+                rel="noopener"
+                title="WhatsApp Secaucus"
+                ><img src="whatsapp-button.png" alt="WhatsApp"
+              /></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-label="Contact">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub" style="text-align: center">
+        Stop by either location, call, or message us on social.
+      </p>
+      <div class="grid">
+        <article class="card" style="grid-column: span 6">
+          <div class="body">
+            <h3>Edgewater</h3>
+            <p>
+              360 Old River Road, Edgewater, NJ 07020 •
+              <a href="tel:+12012334220">(201) 233-4220</a>
+            </p>
+            <div class="socials">
+              <a class="cta" href="#schedule" style="margin-left: 0"
+                >View Schedule</a
+              >
+              <a
+                href="https://www.facebook.com/jiujitsufamilytrainingcenter-227789128660198"
+                target="_blank"
+                rel="noopener"
+                title="Facebook"
+              >
+                <img src="facebook-button.png" alt="Facebook" />
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="card" style="grid-column: span 6">
+          <div class="body">
+            <h3>Secaucus</h3>
+            <p>
+              700 Plaza Drive, Secaucus, NJ 07094 •
+              <a href="tel:+16463193759">(646) 319-3759</a>
+            </p>
+            <div class="socials">
+              <a class="cta" href="#schedule" style="margin-left: 0"
+                >View Schedule</a
+              >
+              <a
+                href="https://www.facebook.com/61575732689033"
+                target="_blank"
+                rel="noopener"
+                title="Facebook"
+              >
+                <img src="facebook-button.png" alt="Facebook" />
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="foot">
+        <div>
+          <h3 style="margin: 0 0 6px">Jiu-Jitsu Family Training Center</h3>
+          <p class="section-sub">Clean technique • Respect • Community.</p>
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/jiujitsufamilytrainingcenter-227789128660198"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="facebook-button.png" alt="Facebook" />
+            </a>
+            <a class="cta" href="#contact" style="margin-left: 8px"
+              >Book Free Trial</a
+            >
+          </div>
+        </div>
+        <div>
+          <h4>Edgewater</h4>
+          <p>
+            360 Old River Road<br />Edgewater, NJ 07020<br /><a
+              href="tel:+12012334220"
+              >(201) 233-4220</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Secaucus</h4>
+          <p>
+            700 Plaza Drive<br />Secaucus, NJ 07094<br /><a
+              href="tel:+16463193759"
+              >(646) 319-3759</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Brazil BJJ Camp</h4>
+          <p>
+            <a
+              class="cta"
+              href="https://www.jiujitsunewjersey.com/bjj-camp-in-brazil"
+              target="_blank"
+              rel="noopener"
+              style="padding: 8px 12px"
+              >Learn more</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> Jiu-Jitsu Family Training Center
+      </div>
+    </footer>
+
+    <script>
+      // Lightweight hero rotator using your local images
+      const heroImgs = [
+        "banner-1.jpg",
+        "banner-2.jpg",
+        "banner-3.jpg",
+        "banner-4.jpg",
+        "banner-5.jpg",
+        "banner-6.jpg",
+      ];
+      let i = 0;
+      const poster = document.getElementById("heroPoster");
+      setInterval(() => {
+        i = (i + 1) % heroImgs.length;
+        poster.style.backgroundImage = `url('${heroImgs[i]}')`;
+      }, 4200);
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
