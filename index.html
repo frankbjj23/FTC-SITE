@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -11,16 +11,8 @@
     <header>
       <nav class="nav" id="nav">
         <a class="brand" href="#top" aria-label="FTC Home">
-          <img
-            class="small"
-            src="images/team-oliveira-logo.jpg"
-            alt="Team Oliveira crest"
-          />
-          <img
-            class="long"
-            src="images/ftc-site-logo-2025.png"
-            alt="FTC — Jiu‑Jitsu Family Training Center"
-          />
+          <img class="small" src="images/team-oliveira-logo.jpg" alt="Team Oliveira crest" />
+          <img class="long" src="images/ftc-site-logo-2025.png" alt="FTC — Jiu‑Jitsu Family Training Center" />
         </a>
         <div class="navlinks">
           <a href="#welcome">Home</a>
@@ -32,501 +24,172 @@
           <a href="#locations">Locations</a>
           <a href="#contact" class="cta">Book Free Trial</a>
         </div>
-        <button
-          class="menu-btn"
-          id="menuToggle"
-          aria-label="Open menu"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
+        <button class="menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
       </nav>
     </header>
+
     <main>
-      <section class="hero" id="welcome">
-        <div class="wrap">
-          <div>
-            <span class="tag"
-              >Beginner‑friendly • Family‑focused • Proven results</span
-            >
+      <!-- HERO -->
+      <section class="hero section" id="welcome">
+        <div class="wrap" style="padding-left:0; padding-right:0">
+          <div style="padding: 0 20px">
+            <span class="tag">Beginner‑friendly • Family‑focused • Proven results</span>
             <h1>World‑class Brazilian Jiu‑Jitsu in North Jersey</h1>
-            <p class="section-sub">
-              Learn clean, effective technique in a welcoming team environment.
-              Build confidence, fitness, and discipline—at any age or experience
-              level.
-            </p>
+            <p class="section-sub">Learn clean, effective technique in a welcoming team environment. Build confidence, fitness, and discipline—at any age or experience level.</p>
             <div class="info">
               <a class="cta" href="#contact">Start Your Free Trial</a>
-              <a
-                class="cta"
-                href="#schedule"
-                style="
-                  border-color: rgba(56, 189, 248, 0.45);
-                  background: linear-gradient(
-                    180deg,
-                    rgba(56, 189, 248, 0.35),
-                    rgba(56, 189, 248, 0.1)
-                  );
-                "
-                >View Schedule</a
-              >
-              <a
-                href="tel:+16463193759"
-                title="Call FTC"
-                aria-label="Call FTC"
-                class="icon-call"
-              >
-                <img
-                  src="images/whatsapp-button.png"
-                  alt="Call FTC"
-                  style="
-                    width: 44px;
-                    height: auto;
-                    border-radius: 8px;
-                    border: 1px solid rgba(255, 255, 255, 0.12);
-                  "
-                />
+              <a class="cta" href="#schedule" style="border-color: rgba(56,189,248,.45); background: linear-gradient(180deg, rgba(56,189,248,.35), rgba(56,189,248,.1));">View Schedule</a>
+              <a href="tel:+16463193759" title="Call FTC" aria-label="Call FTC" class="icon-call">
+                <img src="images/whatsapp-button.png" alt="Call FTC" style="width: 44px; height: auto; border-radius: 8px; border: 1px solid rgba(255,255,255,.12)" />
               </a>
+              <a href="https://wa.me/16463193759" target="_blank" rel="noopener">WhatsApp</a>
             </div>
           </div>
-          <div
-            class="poster"
-            id="heroPoster"
-            role="img"
-            aria-label="Training on the mats"
-            style="background-image: url('images/banner-1.jpg')"
-          ></div>
+          <div class="poster" id="heroPoster" role="img" aria-label="Training on the mats" style="background-image:url('images/banner-1.jpg')"></div>
         </div>
       </section>
 
+      <!-- PROGRAMS -->
       <section id="programs" class="section" aria-label="Programs">
         <h2>Programs</h2>
-        <p class="section-sub">
-          Age‑appropriate classes, clear curriculum, and a supportive team
-          culture.
-        </p>
+        <p class="section-sub">Age‑appropriate classes, clear curriculum, and a supportive team culture.</p>
         <div class="grid">
-          <article class="card">
-            <div
-              class="img"
-              style="background-image: url('images/kids2.jpg')"
-            ></div>
-            <div class="body">
-              <h3>Kids & Teens</h3>
-              <p class="section-sub">
-                Build confidence, focus, and coordination through games and
-                fundamentals.
-              </p>
-            </div>
-          </article>
-          <article class="card">
-            <div
-              class="img"
-              style="background-image: url('images/adults-class.jpg')"
-            ></div>
-            <div class="body">
-              <h3>Adults</h3>
-              <p class="section-sub">
-                Fundamentals, advanced, and comp team—train smart and safely.
-              </p>
-            </div>
-          </article>
+          <article class="card"><div class="img" style="background-image:url('images/kids2.jpg')"></div><div class="body"><h3>Kids (3‑12)</h3><p class="section-sub">Build confidence, focus, and coordination through games and fundamentals.</p><span class="pill">Beginner friendly</span></div></article>
+          <article class="card"><div class="img" style="background-image:url('images/teens.jpg')"></div><div class="body"><h3>Teens (13‑17)</h3><p class="section-sub">Sharpen technique, discipline, and leadership in a positive culture.</p><span class="pill">Gi & No‑Gi</span></div></article>
+          <article class="card"><div class="img" style="background-image:url('images/adults-class.jpg')"></div><div class="body"><h3>Adults</h3><p class="section-sub">Fundamentals, advanced, and comp team—train smart and safely.</p><span class="pill">All levels</span></div></article>
         </div>
       </section>
 
-      <!-- Schedule (Tabs) -->
+      <!-- SCHEDULE (tabs by location) -->
       <section id="schedule" class="section" aria-label="Schedule">
         <h2>Schedule</h2>
         <p class="section-sub">Select a location to view class times.</p>
         <div class="tabs" role="tablist">
-          <button
-            id="tab-edgewater"
-            class="active"
-            role="tab"
-            aria-controls="panel-edgewater"
-            aria-selected="true"
-          >
-            Edgewater
-          </button>
-          <button
-            id="tab-secaucus"
-            role="tab"
-            aria-controls="panel-secaucus"
-            aria-selected="false"
-          >
-            Secaucus
-          </button>
+          <button id="tab-edgewater" class="active" role="tab" aria-controls="panel-edgewater" aria-selected="true">Edgewater</button>
+          <button id="tab-secaucus" role="tab" aria-controls="panel-secaucus" aria-selected="false">Secaucus</button>
         </div>
-        <div
-          id="panel-edgewater"
-          role="tabpanel"
-          aria-labelledby="tab-edgewater"
-        >
-          <div
-            style="
-              border: 1px solid rgba(255, 255, 255, 0.12);
-              border-radius: 14px;
-              overflow: hidden;
-              background: rgba(255, 255, 255, 0.04);
-            "
-          >
-            <iframe
-              title="Edgewater Class Schedule"
-              style="width: 100%; height: 380px; border: 0"
-              loading="lazy"
-              src="images/pub.html"
-            ></iframe>
+        <div id="panel-edgewater" role="tabpanel" aria-labelledby="tab-edgewater">
+          <div style="border:1px solid rgba(255,255,255,.12); border-radius:14px; overflow:hidden; background:rgba(255,255,255,.04)">
+            <iframe title="Edgewater Class Schedule" style="width:100%; height:380px; border:0" loading="lazy" src="images/pub.html"></iframe>
           </div>
         </div>
-        <div
-          id="panel-secaucus"
-          role="tabpanel"
-          aria-labelledby="tab-secaucus"
-          hidden
-        >
-          <div
-            style="
-              border: 1px solid rgba(255, 255, 255, 0.12);
-              border-radius: 14px;
-              overflow: hidden;
-              background: rgba(255, 255, 255, 0.04);
-            "
-          >
-            <iframe
-              title="Secaucus Class Schedule"
-              style="width: 100%; height: 380px; border: 0"
-              loading="lazy"
-              src="images/pub(1).html"
-            ></iframe>
+        <div id="panel-secaucus" role="tabpanel" aria-labelledby="tab-secaucus" hidden>
+          <div style="border:1px solid rgba(255,255,255,.12); border-radius:14px; overflow:hidden; background:rgba(255,255,255,.04)">
+            <iframe title="Secaucus Class Schedule" style="width:100%; height:380px; border:0" loading="lazy" src="images/pub(1).html"></iframe>
           </div>
         </div>
       </section>
 
+      <!-- COACHES -->
       <section id="coaches" class="section" aria-label="Coaches">
         <h2>Coaches</h2>
         <div class="grid">
-          <article class="card" style="grid-column: span 6">
-            <div
-              class="img"
-              style="background-image: url('images/professor.jpg')"
-            ></div>
-            <div class="body">
-              <h3>Professor Marcelo Oliveira</h3>
-              <p class="section-sub">Head Instructor — Brazilian Jiu‑Jitsu</p>
-            </div>
-          </article>
-          <article class="card" style="grid-column: span 6">
-            <div
-              class="img"
-              style="background-image: url('images/professor-john.jpg')"
-            ></div>
-            <div class="body">
-              <h3>Professor John Toribio</h3>
-              <p class="section-sub">Instructor — Brazilian Jiu‑Jitsu</p>
-            </div>
-          </article>
+          <article class="card" style="grid-column: span 6"><div class="img" style="background-image:url('images/professor.jpg')"></div><div class="body"><h3>Professor Marcelo Oliveira</h3><p class="section-sub">Head Instructor — Brazilian Jiu‑Jitsu</p></div></article>
+          <article class="card" style="grid-column: span 6"><div class="img" style="background-image:url('images/professor-john.jpg')"></div><div class="body"><h3>Professor John Toribio</h3><p class="section-sub">Instructor — Brazilian Jiu‑Jitsu</p></div></article>
         </div>
       </section>
 
+      <!-- GALLERY -->
       <section class="section" aria-label="On the Mats">
         <h2>On the Mats</h2>
-        <p class="section-sub">
-          Scenes from training, family events, and competition.
-        </p>
+        <p class="section-sub">Scenes from training, family events, and competition.</p>
         <div class="gallery">
-          <a href="#"
-            ><img loading="lazy" src="images/banner-1.jpg" alt="Mat talk"
-          /></a>
-          <a href="#"
-            ><img
-              loading="lazy"
-              src="images/banner-2.jpg"
-              alt="Gi fundamentals"
-          /></a>
-          <a href="#"
-            ><img loading="lazy" src="images/banner-3.jpg" alt="Kids MMA class"
-          /></a>
-          <a href="#"
-            ><img
-              loading="lazy"
-              src="images/tournament.jpg"
-              alt="Tournament action"
-          /></a>
-          <a href="#"
-            ><img
-              loading="lazy"
-              src="images/tournament2.jpg"
-              alt="Tournament action"
-          /></a>
-          <a href="#"
-            ><img loading="lazy" src="images/teens.jpg" alt="Teens drilling"
-          /></a>
+          <img loading="lazy" src="images/banner-1.jpg" alt="Mat talk" />
+          <img loading="lazy" src="images/banner-2.jpg" alt="Gi fundamentals" />
+          <img loading="lazy" src="images/banner-3.jpg" alt="Kids MMA class" />
+          <img loading="lazy" src="images/tournament.jpg" alt="Tournament action" />
+          <img loading="lazy" src="images/tournament2.jpg" alt="Tournament action" />
+          <img loading="lazy" src="images/teens.jpg" alt="Teens drilling" />
         </div>
       </section>
 
+      <!-- PRICING -->
       <section id="pricing" class="section" aria-label="Pricing">
         <h2>Pricing</h2>
-        <p class="section-sub">
-          Simple options to match your goals. Ask about family plans.
-        </p>
+        <p class="section-sub">Simple options to match your goals. Ask about family plans.</p>
         <div class="grid">
-          <article class="card">
-            <div class="body">
-              <h3>Starter</h3>
-              <p class="section-sub">2 classes / week</p>
-              <a class="cta" href="#contact">Claim Offer</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="body">
-              <h3>Unlimited</h3>
-              <p class="section-sub">All classes</p>
-              <a class="cta" href="#contact">Claim Offer</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="body">
-              <h3>Family</h3>
-              <p class="section-sub">Discounted multi‑member</p>
-              <a class="cta" href="#contact">Claim Offer</a>
-            </div>
-          </article>
+          <article class="card"><div class="body"><h3>Starter</h3><p class="section-sub">2 classes / week</p><a class="cta" href="#contact">Claim Offer</a></div></article>
+          <article class="card"><div class="body"><h3>Unlimited</h3><p class="section-sub">All classes</p><a class="cta" href="#contact">Claim Offer</a></div></article>
+          <article class="card"><div class="body"><h3>Family</h3><p class="section-sub">Discounted multi‑member</p><a class="cta" href="#contact">Claim Offer</a></div></article>
         </div>
       </section>
 
+      <!-- FAQ -->
       <section id="faq" class="section" aria-label="FAQ">
         <h2>FAQ</h2>
-        <details>
-          <summary>Do I need experience?</summary>
-          <p class="section-sub">
-            No. Start in Fundamentals—coaches meet you at your level and pace.
-          </p>
-        </details>
-        <details>
-          <summary>What should I bring?</summary>
-          <p class="section-sub">
-            Water and workout clothes. We have loaner gis; rashguards/shorts for
-            No‑Gi.
-          </p>
-        </details>
-        <details>
-          <summary>Is there parking?</summary>
-          <p class="section-sub">Yes—easy parking near both academies.</p>
-        </details>
+        <details><summary>Do I need experience?</summary><p class="section-sub">No. Start in Fundamentals—coaches meet you at your level and pace.</p></details>
+        <details><summary>What should I bring?</summary><p class="section-sub">Water and workout clothes. We have loaner gis; rashguards/shorts for No‑Gi.</p></details>
+        <details><summary>Is there parking?</summary><p class="section-sub">Yes—easy parking near both academies.</p></details>
       </section>
 
+      <!-- LOCATIONS -->
       <section id="locations" class="section" aria-label="Locations">
         <h2>Visit Us</h2>
-        <p class="section-sub">
-          Two North Jersey academies. Stop by or call during class hours.
-        </p>
+        <p class="section-sub">Two North Jersey academies. Stop by or call during class hours.</p>
         <div class="grid">
-          <article class="card">
-            <div
-              class="img"
-              style="background-image: url('images/storefront-night.jpg')"
-            ></div>
+          <article class="card" style="grid-column: span 6">
+            <div class="img" style="background-image:url('images/storefront-night.jpg')"></div>
             <div class="body">
               <h3>Edgewater, NJ</h3>
               <p class="section-sub">360 Old River Road, Edgewater, NJ 07020</p>
               <div class="info">
-                <a
-                  href="tel:+16463193759"
-                  aria-label="Call Edgewater"
-                  title="Call Edgewater"
-                  class="icon-call"
-                  ><img
-                    src="images/whatsapp-button.png"
-                    alt="Call Edgewater"
-                    style="
-                      width: 40px;
-                      height: auto;
-                      border-radius: 8px;
-                      border: 1px solid rgba(255, 255, 255, 0.12);
-                    "
-                /></a>
-                <a
-                  href="https://maps.google.com/?q=360%20Old%20River%20Road%2C%20Edgewater%2C%20NJ%2007020"
-                  target="_blank"
-                  rel="noopener"
-                  >Directions</a
-                >
+                <a href="tel:+16463193759" aria-label="Call Edgewater" title="Call Edgewater" class="icon-call"><img src="images/whatsapp-button.png" alt="Call Edgewater" style="width: 40px; height: auto; border-radius: 8px; border: 1px solid rgba(255,255,255,.12)" /></a>
+                <a href="https://maps.google.com/?q=360%20Old%20River%20Road%2C%20Edgewater%2C%20NJ%2007020" target="_blank" rel="noopener">Directions</a>
               </div>
             </div>
           </article>
-          <article class="card">
-            <div
-              class="img"
-              style="background-image: url('images/storefront-secaucus.jpg')"
-            ></div>
+          <article class="card" style="grid-column: span 6">
+            <div class="img" style="background-image:url('images/storefront-secaucus.jpg')"></div>
             <div class="body">
               <h3>Secaucus, NJ</h3>
               <p class="section-sub">700 Plaza Drive, Secaucus, NJ 07094</p>
               <div class="info">
-                <a
-                  href="tel:+16463193759"
-                  aria-label="Call Secaucus"
-                  title="Call Secaucus"
-                  class="icon-call"
-                  ><img
-                    src="images/whatsapp-button.png"
-                    alt="Call Secaucus"
-                    style="
-                      width: 40px;
-                      height: auto;
-                      border-radius: 8px;
-                      border: 1px solid rgba(255, 255, 255, 0.12);
-                    "
-                /></a>
-                <a
-                  href="https://maps.google.com/?q=700%20Plaza%20Drive%2C%20Secaucus%2C%20NJ%2007094"
-                  target="_blank"
-                  rel="noopener"
-                  >Directions</a
-                >
+                <a href="tel:+16463193759" aria-label="Call Secaucus" title="Call Secaucus" class="icon-call"><img src="images/whatsapp-button.png" alt="Call Secaucus" style="width: 40px; height: auto; border-radius: 8px; border: 1px solid rgba(255,255,255,.12)" /></a>
+                <a href="https://maps.google.com/?q=700%20Plaza%20Drive%2C%20Secaucus%2C%20NJ%2007094" target="_blank" rel="noopener">Directions</a>
               </div>
             </div>
           </article>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact" class="section" aria-label="Contact">
         <h2>Book a Free Trial</h2>
-        <p class="section-sub">
-          Tell us a bit about you and we’ll get you on the mats.
-        </p>
-        <form
-          id="contactForm"
-          style="display: grid; gap: 10px; max-width: 720px"
-        >
-          <div
-            class="grid"
-            style="grid-template-columns: repeat(12, 1fr); gap: 10px"
-          >
-            <input
-              required
-              name="name"
-              placeholder="Your name"
-              style="
-                grid-column: span 6;
-                padding: 12px;
-                border-radius: 10px;
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                background: rgba(255, 255, 255, 0.04);
-                color: var(--text);
-              "
-            />
-            <input
-              required
-              type="tel"
-              name="phone"
-              placeholder="Phone"
-              style="
-                grid-column: span 6;
-                padding: 12px;
-                border-radius: 10px;
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                background: rgba(255, 255, 255, 0.04);
-                color: var(--text);
-              "
-            />
-            <select
-              name="location"
-              style="
-                grid-column: span 6;
-                padding: 12px;
-                border-radius: 10px;
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                background: rgba(255, 255, 255, 0.04);
-                color: var(--text);
-              "
-            >
+        <p class="section-sub">Tell us a bit about you and we’ll get you on the mats.</p>
+        <form id="contactForm" style="display:grid; gap:10px; max-width:720px">
+          <div class="grid" style="grid-template-columns: repeat(12, 1fr); gap: 10px">
+            <input required name="name" placeholder="Your name" style="grid-column: span 6; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); color: var(--text)" />
+            <input required type="tel" name="phone" placeholder="Phone" style="grid-column: span 6; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); color: var(--text)" />
+            <select name="location" style="grid-column: span 6; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); color: var(--text)">
               <option value="Edgewater">Edgewater</option>
               <option value="Secaucus">Secaucus</option>
             </select>
-            <select
-              name="program"
-              style="
-                grid-column: span 6;
-                padding: 12px;
-                border-radius: 10px;
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                background: rgba(255, 255, 255, 0.04);
-                color: var(--text);
-              "
-            >
+            <select name="program" style="grid-column: span 6; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); color: var(--text)">
               <option value="Kids">Kids</option>
               <option value="Teens">Teens</option>
               <option value="Adults">Adults</option>
             </select>
-            <textarea
-              name="message"
-              rows="4"
-              placeholder="Message (optional)"
-              style="
-                grid-column: span 12;
-                padding: 12px;
-                border-radius: 10px;
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                background: rgba(255, 255, 255, 0.04);
-                color: var(--text);
-              "
-            ></textarea>
+            <textarea name="message" rows="4" placeholder="Message (optional)" style="grid-column: span 12; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); color: var(--text)"></textarea>
           </div>
           <div class="info">
             <button type="submit" class="cta">Send Request</button>
-            <a
-              href="tel:+16463193759"
-              aria-label="Call FTC"
-              title="Call FTC"
-              class="icon-call"
-              ><img
-                src="images/whatsapp-button.png"
-                alt="Call FTC"
-                style="
-                  width: 44px;
-                  height: auto;
-                  border-radius: 8px;
-                  border: 1px solid rgba(255, 255, 255, 0.12);
-                "
-            /></a>
-            <a href="https://wa.me/16463193759" target="_blank" rel="noopener"
-              >WhatsApp</a
-            >
+            <a href="tel:+16463193759" aria-label="Call FTC" title="Call FTC" class="icon-call"><img src="images/whatsapp-button.png" alt="Call FTC" style="width: 44px; height: auto; border-radius: 8px; border: 1px solid rgba(255,255,255,.12)" /></a>
+            <a href="https://wa.me/16463193759" target="_blank" rel="noopener">WhatsApp</a>
           </div>
-          <div
-            id="formStatus"
-            class="section-sub"
-            role="status"
-            aria-live="polite"
-          ></div>
+          <div id="formStatus" class="section-sub" role="status" aria-live="polite"></div>
         </form>
       </section>
 
+      <!-- AFFILIATIONS -->
       <section id="affiliations" class="section" aria-label="Affiliations">
         <h2>Affiliations</h2>
-        <p class="section-sub">
-          Proudly affiliated with Draculino Association.
-        </p>
-        <div
-          style="display: flex; gap: 18px; align-items: center; flex-wrap: wrap"
-        >
-          <div style="display: flex; align-items: center; gap: 12px">
-            <img
-              src="images/draculino-logo.jpg"
-              alt="Draculino Association crest"
-              style="
-                width: 72px;
-                height: 72px;
-                border-radius: 12px;
-                border: 1px solid rgba(255, 255, 255, 0.12);
-              "
-            />
+        <p class="section-sub">Proudly affiliated with Draculino Association.</p>
+        <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap">
+          <div style="display:flex; align-items:center; gap:12px">
+            <img src="images/draculino-logo.jpg" alt="Draculino Association crest" style="width:72px; height:72px; border-radius:12px; border:1px solid rgba(255,255,255,.12)" />
             <div>
               <strong>Draculino Association</strong>
-              <div class="section-sub">
-                Vinicius “Draculino” Magalhães lineage
-              </div>
+              <div class="section-sub">Vinicius “Draculino” Magalhães lineage</div>
             </div>
           </div>
         </div>
@@ -536,63 +199,48 @@
     <footer>
       <div class="foot">
         <div>
-          <h3 style="margin: 0 0 6px">Jiu‑Jitsu Family Training Center</h3>
+          <div style="display:flex; align-items:center; gap:10px; margin:0 0 6px">
+            <img src="images/team-oliveira-logo.jpg" alt="Team Oliveira crest" style="width:28px; height:28px; border-radius:6px; border:1px solid rgba(255,255,255,.12)"/>
+            <strong>Jiu‑Jitsu Family Training Center</strong>
+          </div>
           <p class="section-sub">Clean technique • Respect • Community.</p>
         </div>
         <div>
           <h4>Edgewater</h4>
-          <p class="section-sub">360 Old River Road<br />Edgewater, NJ 07020</p>
+          <p class="section-sub">360 Old River Road<br/>Edgewater, NJ 07020</p>
+          <div class="info"><a href="tel:+16463193759" aria-label="Call Edgewater" title="Call Edgewater" class="icon-call"><img src="images/whatsapp-button.png" alt="Call Edgewater" style="width: 36px; height: auto; border-radius: 8px; border: 1px solid rgba(255,255,255,.12)" /></a> <a href="https://maps.google.com/?q=360%20Old%20River%20Road%2C%20Edgewater%2C%20NJ%2007020" target="_blank" rel="noopener">Directions</a></div>
         </div>
         <div>
           <h4>Secaucus</h4>
-          <p class="section-sub">700 Plaza Drive<br />Secaucus, NJ 07094</p>
+          <p class="section-sub">700 Plaza Drive<br/>Secaucus, NJ 07094</p>
+          <div class="info"><a href="tel:+16463193759" aria-label="Call Secaucus" title="Call Secaucus" class="icon-call"><img src="images/whatsapp-button.png" alt="Call Secaucus" style="width: 36px; height: auto; border-radius: 8px; border: 1px solid rgba(255,255,255,.12)" /></a> <a href="https://maps.google.com/?q=700%20Plaza%20Drive%2C%20Secaucus%2C%20NJ%2007094" target="_blank" rel="noopener">Directions</a></div>
         </div>
       </div>
-      <div class="copyright">
-        © <span id="year"></span> Jiu‑Jitsu Family Training Center
-      </div>
+      <div class="copyright">© <span id="year"></span> Jiu‑Jitsu Family Training Center</div>
     </footer>
 
     <script>
       // Mobile menu
-      const nav = document.getElementById("nav");
-      const menuToggle = document.getElementById("menuToggle");
+      const nav = document.getElementById('nav');
+      const menuToggle = document.getElementById('menuToggle');
       if (nav && menuToggle) {
-        const navLinks = nav.querySelectorAll(".navlinks a");
+        const navLinks = nav.querySelectorAll('.navlinks a');
         const toggleMenu = () => {
-          const isOpen = nav.classList.toggle("open");
-          menuToggle.setAttribute("aria-expanded", String(isOpen));
-          menuToggle.setAttribute(
-            "aria-label",
-            isOpen ? "Close menu" : "Open menu"
-          );
+          const isOpen = nav.classList.toggle('open');
+          menuToggle.setAttribute('aria-expanded', String(isOpen));
+          menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
         };
-        const closeMenu = () => {
-          if (nav.classList.contains("open")) toggleMenu();
-        };
-        menuToggle.addEventListener("click", toggleMenu);
-        navLinks.forEach((l) => l.addEventListener("click", closeMenu));
-        document.addEventListener("click", (e) => {
-          if (!nav.contains(e.target) && e.target !== menuToggle) closeMenu();
-        });
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") closeMenu();
-        });
+        const closeMenu = () => { if (nav.classList.contains('open')) toggleMenu(); };
+        menuToggle.addEventListener('click', toggleMenu);
+        navLinks.forEach(l => l.addEventListener('click', closeMenu));
+        document.addEventListener('click', (e) => { if (!nav.contains(e.target) && e.target !== menuToggle) closeMenu(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
       }
 
       // Hero rotator (respects reduced motion)
-      const heroImgs = [
-        "images/banner-1.jpg",
-        "images/banner-2.jpg",
-        "images/banner-3.jpg",
-        "images/banner-4.jpg",
-        "images/banner-5.jpg",
-        "images/banner-6.jpg",
-      ];
-      const poster = document.getElementById("heroPoster");
-      const prefersReducedMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)"
-      );
+      const heroImgs = ['images/banner-1.jpg','images/banner-2.jpg','images/banner-3.jpg','images/banner-4.jpg','images/banner-5.jpg','images/banner-6.jpg'];
+      const poster = document.getElementById('heroPoster');
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
       let heroTimer;
       function startHero() {
         if (!poster || prefersReducedMotion.matches || heroTimer) return;
@@ -602,50 +250,43 @@
           poster.style.backgroundImage = `url('${heroImgs[i]}')`;
         }, 4800);
       }
-      function stopHero() {
-        if (heroTimer) {
-          clearInterval(heroTimer);
-          heroTimer = null;
-        }
-      }
+      function stopHero() { if (heroTimer) { clearInterval(heroTimer); heroTimer = null; } }
       prefersReducedMotion.matches ? stopHero() : startHero();
-      if (typeof prefersReducedMotion.addEventListener === "function") {
-        prefersReducedMotion.addEventListener("change", (e) => {
-          stopHero();
-          if (!e.matches) startHero();
-        });
+      if (typeof prefersReducedMotion.addEventListener === 'function') {
+        prefersReducedMotion.addEventListener('change', e => { stopHero(); if (!e.matches) startHero(); });
       }
 
       // Schedule tabs
-      const tabEdge = document.getElementById("tab-edgewater");
-      const tabSec = document.getElementById("tab-secaucus");
-      const panelEdge = document.getElementById("panel-edgewater");
-      const panelSec = document.getElementById("panel-secaucus");
+      const tabEdge = document.getElementById('tab-edgewater');
+      const tabSec = document.getElementById('tab-secaucus');
+      const panelEdge = document.getElementById('panel-edgewater');
+      const panelSec = document.getElementById('panel-secaucus');
       function activateTab(which) {
-        const isEdge = which === "edge";
-        tabEdge.classList.toggle("active", isEdge);
-        tabSec.classList.toggle("active", !isEdge);
-        tabEdge.setAttribute("aria-selected", String(isEdge));
-        tabSec.setAttribute("aria-selected", String(!isEdge));
+        const isEdge = which === 'edge';
+        tabEdge.classList.toggle('active', isEdge);
+        tabSec.classList.toggle('active', !isEdge);
+        tabEdge.setAttribute('aria-selected', String(isEdge));
+        tabSec.setAttribute('aria-selected', String(!isEdge));
         panelEdge.hidden = !isEdge;
         panelSec.hidden = isEdge;
       }
-      tabEdge?.addEventListener("click", () => activateTab("edge"));
-      tabSec?.addEventListener("click", () => activateTab("sec"));
+      tabEdge?.addEventListener('click', () => activateTab('edge'));
+      tabSec?.addEventListener('click', () => activateTab('sec'));
 
       // Contact form — show confirmation without leaving page
-      const form = document.getElementById("contactForm");
-      const statusEl = document.getElementById("formStatus");
-      form?.addEventListener("submit", (e) => {
+      const form = document.getElementById('contactForm');
+      const statusEl = document.getElementById('formStatus');
+      form?.addEventListener('submit', (e) => {
         e.preventDefault();
         const data = new FormData(form);
-        const name = data.get("name") || "Friend";
+        const name = data.get('name') || 'Friend';
         statusEl.textContent = `Thanks, ${name}! We’ll text or call you shortly.`;
         form.reset();
       });
 
       // Footer year
-      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
+

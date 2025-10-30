@@ -73,3 +73,4 @@ footer { border-top: 1px solid rgba(255,255,255,.08); background: rgba(0,0,0,.35
   .nav.open .navlinks { display: flex; }
   .navlinks a { width: 100%; justify-content: center; }
 }
+
